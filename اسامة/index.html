@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بُنّ — محمصة وقهوة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="#top" class="logo">بُنّ<span>.</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">قصتنا</a>
+      <a href="#menu">القائمة</a>
+      <a href="#ritual">الطقس</a>
+      <a href="#visit">زورونا</a>
+    </div>
+    <a href="#visit" class="nav-cta">احجز طاولة</a>
+    <button class="burger" id="burgerBtn" aria-label="فتح القائمة">☰</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">محمصة بُنّ · تأسست ٢٠١٧</div>
+        <h1>حين تُسكب القهوة<br>يبدأ <em>الحديث</em></h1>
+        <p>نحمّص حبوبنا أسبوعيًا في محمصتنا الصغيرة، ونقدّم القهوة على طريقة الأجداد وطريقة اليوم، في مكان واحد يجمع بين الدلة والإسبريسو.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn-primary">تصفّح القائمة</a>
+          <a href="#about" class="btn-ghost">تعرّف على قصتنا</a>
+        </div>
+      </div>
+
+      <div class="pour-stage">
+        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- steam from dallah spout -->
+          <g class="steam" fill="none" stroke="#e4d5b8" stroke-width="3" stroke-linecap="round" opacity="0.6">
+            <path d="M70 120 Q 60 100 72 85 Q 84 70 74 55"/>
+          </g>
+          <g class="steam s2" fill="none" stroke="#e4d5b8" stroke-width="2.4" stroke-linecap="round" opacity="0.5">
+            <path d="M85 118 Q 95 98 83 84 Q 71 70 82 52"/>
+          </g>
+
+          <!-- dallah (coffee pot) -->
+          <g>
+            <path d="M120 150 C 110 150 100 165 100 185 L 108 260 C 110 275 130 285 150 285 L 185 285 C 205 285 225 275 227 260 L 235 190 C 237 168 220 150 200 150 Z" fill="#c17f3e"/>
+            <path d="M120 150 C 110 150 100 165 100 185 L 108 260 C 110 275 130 285 150 285 L 185 285 C 205 285 225 275 227 260 L 235 190 C 237 168 220 150 200 150 Z" fill="none" stroke="#8a5528" stroke-width="2"/>
+            <!-- spout -->
+            <path d="M100 178 C 60 168 40 145 35 118" fill="none" stroke="#c17f3e" stroke-width="10" stroke-linecap="round"/>
+            <path d="M100 178 C 60 168 40 145 35 118" fill="none" stroke="#8a5528" stroke-width="1.5" opacity="0.5"/>
+            <!-- lid & finial -->
+            <ellipse cx="163" cy="150" rx="42" ry="10" fill="#a66e30"/>
+            <path d="M150 150 L 155 128 Q 163 118 171 128 L 176 150 Z" fill="#c17f3e" stroke="#8a5528" stroke-width="1.5"/>
+            <circle cx="163" cy="120" r="6" fill="#e0a566"/>
+            <!-- handle -->
+            <path d="M225 190 C 250 190 252 235 225 245" fill="none" stroke="#8a5528" stroke-width="8" stroke-linecap="round"/>
+            <!-- base rings -->
+            <path d="M105 240 L 232 240" stroke="#8a5528" stroke-width="3" opacity="0.6"/>
+            <path d="M110 265 L 227 265" stroke="#8a5528" stroke-width="3" opacity="0.6"/>
+          </g>
+
+          <!-- falling coffee stream -->
+          <g class="pour-drop">
+            <ellipse cx="42" cy="120" rx="3.4" ry="9" fill="#3a2010"/>
+          </g>
+
+          <!-- finjan (small cup) on saucer -->
+          <g transform="translate(0,10)">
+            <ellipse cx="55" cy="420" rx="46" ry="10" fill="#241a12"/>
+            <path d="M25 380 C 20 405 30 418 55 418 C 80 418 90 405 85 380 Z" fill="#f2e6d2"/>
+            <ellipse cx="55" cy="380" rx="30" ry="7" fill="#3a2010"/>
+            <path d="M85 388 C 100 388 100 405 85 404" fill="none" stroke="#f2e6d2" stroke-width="6" stroke-linecap="round"/>
+            <ellipse class="ripple" cx="55" cy="380" rx="14" ry="4" fill="none" stroke="#c17f3e" stroke-width="1.5"/>
+          </g>
+
+          <!-- cardamom pods scattered -->
+          <g fill="#7c8b5e" opacity="0.85">
+            <ellipse cx="290" cy="410" rx="9" ry="6" transform="rotate(20 290 410)"/>
+            <ellipse cx="312" cy="428" rx="9" ry="6" transform="rotate(-15 312 428)"/>
+            <ellipse cx="270" cy="435" rx="9" ry="6" transform="rotate(50 270 435)"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-figure">
+        <div class="grain-ring"></div>
+        <svg class="cardamom-pod" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="60" cy="60" rx="34" ry="22" fill="none" stroke="#c17f3e" stroke-width="2"/>
+          <ellipse cx="60" cy="60" rx="20" ry="12" fill="#7c8b5e" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="about-text">
+        <div class="section-head" style="margin-bottom:32px;">
+          <div class="eyebrow">قصتنا</div>
+          <h2>من فناء البيت<br>إلى فنجانك</h2>
+        </div>
+        <p>بدأت الفكرة من دلة والدتي، وقهوة كانت تُقدَّم لكل ضيف يطرق الباب. اليوم نحمل هذه العادة إلى محمصة صغيرة، حيث نختار الحبوب من مزارع محددة، ونحمّصها على دفعات صغيرة كل أسبوع لضمان طزاجتها.</p>
+        <p>نؤمن أن القهوة ليست مشروبًا فقط، بل مناسبة للجلوس والحديث، تمامًا كما تعلّمناها من أجدادنا.</p>
+        <div class="stat-row">
+          <div class="stat"><b>٩</b><span>سنوات خبرة</span></div>
+          <div class="stat"><b>١٢</b><span>مزرعة شريكة</span></div>
+          <div class="stat"><b>٤٠+</b><span>مزيج قهوة</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">القائمة</div>
+        <h2>مشروبات مُختارة بعناية</h2>
+        <p>من القهوة العربية التقليدية إلى الإسبريسو الحديث، كل كوب يُحضّر عند الطلب.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="traditional">قهوة تقليدية</button>
+        <button class="tab-btn" data-tab="modern">إسبريسو وحديثة</button>
+        <button class="tab-btn" data-tab="sweets">مع القهوة</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-panel active" id="traditional">
+          <div class="menu-item">
+            <div><h3>قهوة عربية بالهيل</h3><p>محمصة فاتحة، تُقدَّم في الدلة مع تمر عجوة.</p></div>
+            <div class="price">١٨ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>قهوة سعودية بالزعفران</h3><p>لمسة من الزعفران وماء الورد.</p></div>
+            <div class="price">٢٢ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>قهوة تركية</h3><p>تُطبخ على النار في ركوة نحاسية.</p></div>
+            <div class="price">١٩ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>قهوة مضبوطة</h3><p>محمصة متوسطة، توازن بين المرارة والهيل.</p></div>
+            <div class="price">١٩ ﷼</div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="modern">
+          <div class="menu-item">
+            <div><h3>إسبريسو</h3><p>حبوب محمصة داكنة، طلقة مركّزة.</p></div>
+            <div class="price">١٤ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>لاتيه بالهيل</h3><p>حليب مبخّر مع لمسة هيل خفيفة.</p></div>
+            <div class="price">٢١ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>فلات وايت</h3><p>قوام كثيف وحبوب محمصة متوسطة.</p></div>
+            <div class="price">٢٠ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>كولد برو بالتمر</h3><p>تحضير بارد لـ١٨ ساعة، حلاوة طبيعية من التمر.</p></div>
+            <div class="price">٢٣ ﷼</div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="sweets">
+          <div class="menu-item">
+            <div><h3>تمر عجوة محشو</h3><p>محشو بعجينة اللوز.</p></div>
+            <div class="price">١٦ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>كليجا</h3><p>كعك محشو بالتمر والهيل، على الطريقة النجدية.</p></div>
+            <div class="price">١٥ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>بسكويت الزعفران</h3><p>مخبوز طازج يوميًا.</p></div>
+            <div class="price">١٣ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>معمول بالفستق</h3><p>حشوة فستق حلبي فاخرة.</p></div>
+            <div class="price">١٧ ﷼</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RITUAL -->
+  <section class="ritual" id="ritual">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">طقس التقديم</div>
+        <h2>ثلاث خطوات، عادة واحدة</h2>
+      </div>
+      <div class="ritual-steps">
+        <div class="ritual-step">
+          <span class="glyph">☕</span>
+          <h3>التحميص</h3>
+          <p>دفعات صغيرة كل أسبوع، لضمان نكهة طازجة في كل كوب.</p>
+        </div>
+        <div class="ritual-step">
+          <span class="glyph">🫖</span>
+          <h3>الصب</h3>
+          <p>من الدلة إلى الفنجان، بيد ثابتة وصوت هادئ.</p>
+        </div>
+        <div class="ritual-step">
+          <span class="glyph">🌿</span>
+          <h3>الضيافة</h3>
+          <p>فنجان لا يُرفض، وحديث لا ينتهي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section>
+    <div class="wrap quote-wrap">
+      <p class="quote">"أول مرة أشرب فيها قهوة تجمع بين طعم بيت جدتي ونكهة الإسبريسو الحديث — بُنّ صار محطتي الأسبوعية."</p>
+      <div class="who">— من ضيوف المحمصة</div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:24px;">
+          <div class="eyebrow">زورونا</div>
+          <h2>نستقبلكم يوميًا</h2>
+        </div>
+        <div class="info-row">
+          <b style="min-width:90px;">العنوان</b>
+          <span>شارع التحلية، حي المروج، الرياض</span>
+        </div>
+        <div class="info-row">
+          <b style="min-width:90px;">الأوقات</b>
+          <span>يوميًا من ٧ صباحًا حتى ١١ مساءً</span>
+        </div>
+        <div class="info-row">
+          <b style="min-width:90px;">التواصل</b>
+          <span>٠٥٠ ١٢٣ ٤٥٦٧ · hello@bunn.coffee</span>
+        </div>
+      </div>
+      <div class="map-box"><div class="map-pin"></div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a href="#top" class="logo" style="font-size:1.5rem;">بُنّ<span>.</span></a>
+    <div class="footer-links">
+      <a href="#about">قصتنا</a>
+      <a href="#menu">القائمة</a>
+      <a href="#visit">زورونا</a>
+    </div>
+  </div>
+  <p class="fine">© ٢٠٢٦ محمصة بُنّ. جميع الحقوق محفوظة.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -62,12 +62,17 @@
   }
   nav.wrap{display:flex;align-items:center;justify-content:space-between;}
   .logo{
-    font-family:'Aref Ruqaa',serif;
-    font-size:1.9rem;
-    color:var(--sand);
-    display:flex;align-items:center;gap:10px;
-  }
-  .logo span{color:var(--copper-light);}
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.logo img{
+    width:90px;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
   .nav-links{display:flex;gap:36px;font-size:0.98rem;}
   .nav-links a{
     position:relative; padding:4px 2px; color:var(--sand-dim);

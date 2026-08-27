@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بُنّ — محمصة وقهوة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="#top" class="logo">
+      <img src="logo.png" alt="بُنّ محمصة وقهوة">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">قصتنا</a>
+      <a href="#menu">القائمة</a>
+      <a href="#ritual">الطقس</a>
+      <a href="#visit">زورونا</a>
+    </div>
+    <a href="#visit" class="nav-cta">احجز طاولة</a>
+    <button class="burger" id="burgerBtn" aria-label="فتح القائمة">☰</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">محمصة بُنّ · تأسست ٢٠١٧</div>
+        <h1>حين تُسكب القهوة<br>يبدأ <em>الحديث</em></h1>
+        <p>نحمّص حبوبنا أسبوعيًا في محمصتنا الصغيرة، ونقدّم القهوة على طريقة الأجداد وطريقة اليوم، في مكان واحد يجمع بين الدلة والإسبريسو.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn-primary">تصفّح القائمة</a>
+          <a href="#about" class="btn-ghost">تعرّف على قصتنا</a>
+        </div>
+      </div>
+
+      <div class="pour-stage">
+        <img src="logo.png" alt="دلة قهوة" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-figure"></div>
+      <div class="about-text">
+        <div class="section-head" style="margin-bottom:32px;">
+          <div class="eyebrow">قصتنا</div>
+          <h2>من فناء البيت<br>إلى فنجانك</h2>
+        </div>
+        <p>بدأت الفكرة من دلة والدتي، وقهوة كانت تُقدَّم لكل ضيف يطرق الباب. اليوم نحمل هذه العادة إلى محمصة صغيرة، حيث نختار الحبوب من مزارع محددة، ونحمّصها على دفعات صغيرة كل أسبوع لضمان طزاجتها.</p>
+        <p>نؤمن أن القهوة ليست مشروبًا فقط، بل مناسبة للجلوس والحديث، تمامًا كما تعلّمناها من أجدادنا.</p>
+        <div class="stat-row">
+          <div class="stat"><b>٩</b><span>سنوات خبرة</span></div>
+          <div class="stat"><b>١٢</b><span>مزرعة شريكة</span></div>
+          <div class="stat"><b>٤٠+</b><span>مزيج قهوة</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">القائمة</div>
+        <h2>مشروبات مُختارة بعناية</h2>
+        <p>من القهوة العربية التقليدية إلى الإسبريسو الحديث، كل كوب يُحضّر عند الطلب.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="traditional">قهوة تقليدية</button>
+        <button class="tab-btn" data-tab="modern">إسبريسو وحديثة</button>
+        <button class="tab-btn" data-tab="sweets">مع القهوة</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-panel active" id="traditional">
+          <div class="menu-item">
+            <div><h3>قهوة عربية بالهيل</h3><p>محمصة فاتحة، تُقدَّم في الدلة مع تمر عجوة.</p></div>
+            <div class="price">١٨ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>قهوة سعودية بالزعفران</h3><p>لمسة من الزعفران وماء الورد.</p></div>
+            <div class="price">٢٢ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>قهوة تركية</h3><p>تُطبخ على النار في ركوة نحاسية.</p></div>
+            <div class="price">١٩ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>قهوة مضبوطة</h3><p>محمصة متوسطة، توازن بين المرارة والهيل.</p></div>
+            <div class="price">١٩ ﷼</div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="modern">
+          <div class="menu-item">
+            <div><h3>إسبريسو</h3><p>حبوب محمصة داكنة، طلقة مركّزة.</p></div>
+            <div class="price">١٤ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>لاتيه بالهيل</h3><p>حليب مبخّر مع لمسة هيل خفيفة.</p></div>
+            <div class="price">٢١ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>فلات وايت</h3><p>قوام كثيف وحبوب محمصة متوسطة.</p></div>
+            <div class="price">٢٠ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>كولد برو بالتمر</h3><p>تحضير بارد لـ١٨ ساعة، حلاوة طبيعية من التمر.</p></div>
+            <div class="price">٢٣ ﷼</div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="sweets">
+          <div class="menu-item">
+            <div><h3>تمر عجوة محشو</h3><p>محشو بعجينة اللوز.</p></div>
+            <div class="price">١٦ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>كليجا</h3><p>كعك محشو بالتمر والهيل، على الطريقة النجدية.</p></div>
+            <div class="price">١٥ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>بسكويت الزعفران</h3><p>مخبوز طازج يوميًا.</p></div>
+            <div class="price">١٣ ﷼</div>
+          </div>
+          <div class="menu-item">
+            <div><h3>معمول بالفستق</h3><p>حشوة فستق حلبي فاخرة.</p></div>
+            <div class="price">١٧ ﷼</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RITUAL -->
+  <section class="ritual" id="ritual">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">طقس التقديم</div>
+        <h2>ثلاث خطوات، عادة واحدة</h2>
+      </div>
+      <div class="ritual-steps">
+        <div class="ritual-step">
+          <span class="glyph">☕</span>
+          <h3>التحميص</h3>
+          <p>دفعات صغيرة كل أسبوع، لضمان نكهة طازجة في كل كوب.</p>
+        </div>
+        <div class="ritual-step">
+          <span class="glyph">🫖</span>
+          <h3>الصب</h3>
+          <p>من الدلة إلى الفنجان، بيد ثابتة وصوت هادئ.</p>
+        </div>
+        <div class="ritual-step">
+          <span class="glyph">🌿</span>
+          <h3>الضيافة</h3>
+          <p>فنجان لا يُرفض، وحديث لا ينتهي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section>
+    <div class="wrap quote-wrap">
+      <p class="quote">"أول مرة أشرب فيها قهوة تجمع بين طعم بيت جدتي ونكهة الإسبريسو الحديث — بُنّ صار محطتي الأسبوعية."</p>
+      <div class="who">— من ضيوف المحمصة</div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:24px;">
+          <div class="eyebrow">زورونا</div>
+          <h2>نستقبلكم يوميًا</h2>
+        </div>
+        <div class="info-row">
+          <b>العنوان</b>
+          <span>شارع التحلية، حي المروج، الرياض</span>
+        </div>
+        <div class="info-row">
+          <b>الأوقات</b>
+          <span>يوميًا من ٧ صباحًا حتى ١١ مساءً</span>
+        </div>
+        <div class="info-row">
+          <b>التواصل</b>
+          <span>٠٥٠ ١٢٣ ٤٥٦٧ · hello@bunn.coffee</span>
+        </div>
+      </div>
+      <div class="map-box"><div class="map-pin"></div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a href="#top" class="logo">
+      <img src="logo.png" alt="بُنّ محمصة وقهوة">
+    </a>
+    <div class="footer-links">
+      <a href="#about">قصتنا</a>
+      <a href="#menu">القائمة</a>
+      <a href="#visit">زورونا</a>
+    </div>
+  </div>
+  <p class="fine">© ٢٠٢٦ محمصة بُنّ. جميع الحقوق محفوظة.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
